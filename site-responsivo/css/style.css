@@ -1,0 +1,98 @@
+/* Anatomia do CSS */
+body {
+    background-color: rgba(179, 130, 186, 36%);
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+    
+.cabecalho {
+    text-align: center;
+}
+
+.cabecalho__titulo {
+    color: #5d1277;
+}
+
+.cabecalho__subtitulo {
+    color: #ffffff;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    width: 71%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.container__subtitulo {
+    font-size: 16px;
+}
+
+.container__texto {
+    text-align: left;
+}
+    
+.container__parte1 {
+    width: 40%;
+}
+
+.container__ilustracao {
+    width: 40%;
+    margin-top: 4%;
+}
+
+.ilustracao__gif {
+    width: 100%;
+}
+
+.container__btn--roxo {
+    background-color: #5d1277;
+    padding: 20px;
+    border: 1px solid #5d1277;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.container__btn--transparente {
+    padding: 20px;
+    border: 1px solid #5d1277;
+    color: #5d1277;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+    }
+    
+    .container__botoes {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: center;
+    }
+
+    .container__parte1, .container__ilustracao {
+    width: 100%;
+    margin-bottom: 5%;
+    }
+}
+
+@media (max-width: 420px) {
+    .container__btn--roxo {
+        margin-right: 10px;
+    }
+}
