@@ -167,6 +167,7 @@ li {
     background-color: #E4B7E5;
     margin-top: 1.74%;
     margin-bottom: 1.74%;
+    height: auto;
 }
 
 .autora__conteudo {
@@ -458,6 +459,7 @@ li {
     
     html {
         font-size: 16px;
+        line-height: 20px;
     }
 
     /* ÁREA DE NAVEGAÇÃO */
@@ -479,14 +481,72 @@ li {
 
     .cabecalho {
         background-position-y: 50px;
+        background-position-x: 30%;
     }
 
     /* RESUMO */
     .resumo__titulo {
-        margin-top: 0;
+        margin-top: 15%;
+        margin-bottom: 10%;
     }
 
     .resumo__bloco-div {
         margin-top: 7%;
+        flex-direction: column-reverse;
+    }
+
+    .resumo__foto {
+        width: 200px;
+        border-radius: 200px;
+    }
+
+    /* QUOTE */
+
+    .quote {
+        margin: 15% auto;
+        line-height: 27px;
+        font-size: 14px;
+    }
+
+    /* HISTÓRIA */
+    .historia__titulo {
+        margin-bottom: 10%;
+    }
+
+    .historia__paragrafo {
+        margin-bottom: 5%;
+    }
+
+    /* AUTORA */
+    .autora {
+        margin-top: 7%;
+    }
+
+    .autora__conteudo {
+        height: 90px;
+    }
+
+    .autora__imagem {
+        width: 21%;
+    }
+
+    .autora__infos h5 {
+        font-size: 12px;
+        line-height: 100%;
+        width: 150px;
+    }
+
+    .autora-github {
+        display: none;
+    }
+
+    /* BOTÃO */
+    .botao__bottom {
+        padding: 3% 3.5%;
+    }
+    
+    /* RODAPÉ */
+    .rodape__parte1 {
+        padding: none;
     }
 }
