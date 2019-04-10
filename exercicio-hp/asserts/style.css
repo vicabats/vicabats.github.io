@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    background-image: url("../img/hogwarts-harry-potter-exposicao-03.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 270px;
+    background-position-y: 35%;
+}
+
+
+.container__conteudo {
+    padding-top: 180px;
+}
+
+.conteudo__titulo {
+    display: block;
+    text-align: center;
+    margin-top: 0;
+    color: white;
+    font-family: 'Fascinate Inline', cursive;
+}
+
+.classe__botoes {
+    text-align: center;
+}
+
+#imagem {
+    margin: 20px auto;
+    width: 350px;
+    display: block;
+}
+
+#texto {
+    text-align: center;
+    display: block;
+}
+
+#botao-sim, #botao-nao {
+    border: none;
+    padding: 8px 15px;
+    border-radius: 15%;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0px 2px 19px white;
+    cursor: pointer;
+}
