@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculador de IMC empoderado</title>
+    <link rel="stylesheet" href="asserts/style.css">
+    <script src="asserts/script.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div id="table" class="col">
+            <table>
+                <thead>
+                    <tr>
+                        <th>IMC</th>
+                        <th>Classificação</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class="linha1">
+                        <td>Abaixo de 18</td>
+                        <td>Uma deusa!</td>
+                    </tr>
+                    <tr class="linha2">
+                        <td>Entre 18 e 25</td>
+                        <td>Uma louca!</td>
+                    </tr>
+                    <tr class="linha3">
+                        <td>Entre 25 e 30</td>
+                        <td>Uma feiticeira!</td>
+                    </tr>
+                    <tr class="linha4">
+                        <td>Entre 30 e 40</td>
+                        <td>Ela é demais!</td>
+                    </tr>
+                    <tr class="linha5">
+                        <td>Acima de 40</td>
+                        <td>Meu deus, ela é demais!</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="calc" class="col">
+            <label for="peso"> Peso (em kg)</label>
+            <input name="peso"id="peso" type="number" min="0">
+
+            <label for="altura">Altura</label>
+            <input name="altura"id="altura" type="number" min="0">
+
+            <button onclick="calculador()">Calcular</button>
+        </div>
+
+        <div class="col">
+            <p>Seu IMC é:</p>
+            <p id="resposta"></p>
+            <div id="lugarGif"></div>
+        </div>
+    </div>
+</body>
+
+</html>
