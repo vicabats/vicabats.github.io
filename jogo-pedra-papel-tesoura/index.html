@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pedra, papel, tesoura, lagarto ou spock?</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="asserts/style.css">
+    <link rel="shortcut icon" href="./asserts/spock.jpg">
+</head>
+
+<body>
+
+    <!-- DIV DA CHAMADA -->
+    <div class="container">
+        <p class="container__emojis">👊🏻 🗒 ✂ 🦎 🖖🏻</p>
+        <h1 class="container__titulo">Pedra, papel, tesoura, lagarto ou spock?</h1>
+
+        <!-- DIV DO INPUT DE NOME -->
+        <div class="nome-div">
+            <h2 class="nome__subtitulo">Digite seu nome</h2>
+            <div class="nome-flex">
+                <input class="input" id="inputNome" type="text">
+                <button class="nome__btn" id="nomeBtn">Vamos nessa!</button>
+            </div>
+        </div>
+
+        <!-- DIV DO INPUT DO JOGO -->
+        <div class="corpo-div">
+            <h2 class="corpo__subtitulo">Faça sua escolha e jogue contra a máquina! </h2>
+            <div class="corpo-flex">
+                <input class="input" id="inputCorpo" type="text" name="caixa-de-entrada">
+                <button class="corpo__btn" id="corpoBtn">Arriscar a sorte</button>
+                <button class="corpo__btn" id="reiniciarBtn">Limpar</button>
+            </div>
+        </div>
+
+        <!-- PARTE EM QUE APARECE A RESPOSTA -->
+        <div class="conteudo--resposta" id="conteudoResposta"></div>
+
+        <!-- DIV DE POSSÍVEIS COMBINAÇÕES -->
+        <div class="adicionais" id="adicionais">
+            <div class="combinacoes-div">
+                <h5 class="combinacoes__subtitulo">Combinações possíveis</h3>
+                    <ul class="combinacoes__lista">
+                        <li>✂ corta 🗒</li>
+                        <li>🗒 cobre 👊🏻</li>
+                        <li>👊🏻 esmaga 🦎</li>
+                        <li>🦎 envenena 🖖🏻</li>
+                        <li>🖖🏻 quebra ✂</li>
+                        <li>✂ decapita 🦎</li>
+                        <li>🦎 come 🗒</li>
+                        <li>🗒 desqualifica 🖖🏻</li>
+                        <li>🖖🏻 vaporiza 👊🏻</li>
+                        <li>👊🏻 esmaga ✂ </li>
+                    </ul>
+            </div>
+            <!-- PLACAR ENTRE JOGADOR E MÁQUINA -->
+            <div class="placar-div" id="placar">
+                <table class="tabela-pontos">
+                    <tr>
+                        <th class="placar__titulo" id="placarTitulo">Computador</th>
+                        <th class="placar__usuario" id="placarUsuario"></th>
+                    </tr>
+
+                    <tr>
+                        <td id="pontoPc">0</td>
+                        <td id="pontoUsuario">0</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="asserts/script.js"></script>
+</body>
+
+</html>

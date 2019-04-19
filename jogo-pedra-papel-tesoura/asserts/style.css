@@ -1,0 +1,164 @@
+body {
+    background-color:#9BCCC2;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* DIV DA CHAMADA */
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container__emojis {
+    font-size: 30px;
+}
+
+.container__titulo {
+    margin-bottom: 5px;
+    margin-top: 3px;
+    color: #7F7B6E;
+}
+
+/* EM COMUM ENTRE DIV CORPO E DIV NOME */
+.corpo__subtitulo, .nome__subtitulo {
+    font-size: 15px;
+    color: #706C61;
+}
+
+.input {
+    font-size: 20px;
+}
+
+.corpo__btn, .nome__btn {
+    border-radius: 5%;
+    padding: 8px 8px;
+    background-color: rgb(115, 206, 115);
+    border: none;
+    text-transform: uppercase;
+    color: #BCF8EC;
+    font-weight: bold;
+    background-color: #7F7B6E;
+
+}
+
+/* DIV NOME */
+.nome-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nome__btn {
+    margin-top: 10px;
+}
+
+/* DIV CORPO */
+.corpo-div{
+    display: none;
+}
+
+.corpo-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.corpo-flex input, .corpo-flex button {
+    margin-left: 15px;
+}
+
+/* RESPOSTA */
+.conteudo--resposta {
+    margin-top: 10px;
+    text-align: center;
+    color: #fff3f3;
+}
+
+/* ADICIONAIS */
+.adicionais{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* DIV COMBINAÇÕES */
+.combinacoes-div {
+    display: inline-block;
+    margin-top: 2%
+}
+
+.combinacoes__subtitulo {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+}
+
+.combinacoes__lista {
+    list-style: none;
+    border: 3px dotted #706C61;
+    text-align: center;
+    padding: 0;
+    font-size: 14px;
+}
+
+.combinacoes__lista li {
+    margin: 4px 0;
+}
+
+/* PLACAR */
+.placar-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabela-pontos {
+    display: flex;
+    justify-content: center;
+    border: 3px dotted #706C61;
+    width: 400px;
+    height: 100px;
+}
+
+.pontos-user-pc p {
+    margin: 0 35px;
+}
+
+.placar__titulo, .placar__usuario {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    font-size: 13px;
+}
+
+td {
+    text-align: center;
+}
+
+/* RESPONSIVO 700 */
+@media (max-width:700px) {
+    
+    /* PLACAR */
+    .tabela-pontos {
+        width: auto;
+        height: auto;
+    }
+
+    .placar__titulo {
+        margin-left: 0 10px;
+    }
+}
+
+@media (max-width: 550px){
+    /* BOTAO */
+    .corpo__btn {
+        font-size: 12px;
+        margin: 10px 0 0 0;
+    }
+
+    .corpo-flex {
+        display: grid;
+        margin: 0;
+    }
+}
