@@ -164,10 +164,12 @@ console.log(contadorAcertos)
     resultadoUsuario.innerHTML = "Zero pontos, honestamente? Que vergonha..."
     }
 
-  else if (contadorAcertos >0 && contadorAcertos <=3) {
-    console.log(contadorAcertos)
+  else if (contadorAcertos == 1){
+    resultadoUsuario.innerHTML = "Você só marcou 1 ponto! Que triste!"
+  }
 
-    resultadoUsuario.innerHTML = "Que fã de bosta. Você só marcou " + contadorAcertos + " pontos."
+  else if (contadorAcertos >0 && contadorAcertos <=3) {
+    resultadoUsuario.innerHTML = "Você precisa assistir mais The Office. Enquanto isso, receba seus " + contadorAcertos + " pontos."
     }
 
   else if (contadorAcertos > 3 && contadorAcertos <=7) {
