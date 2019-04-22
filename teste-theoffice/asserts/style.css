@@ -8,8 +8,12 @@ fieldset {
 }
 
 .container{
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
+}
+
+label input {
+    font-size: 13px;
 }
 
 /* CHAMADA */
@@ -17,15 +21,20 @@ fieldset {
 .chamada__div{
     text-align: center;
     letter-spacing: 2px;
+    width: 70%;
+    margin: auto;
+    
 }
 
 .chamada__foto{
-    width: 80%;
+    width: 100%;
 }
 
 .chamada__titulo{
     font-size: 40px;
     text-align: center;
+    font-weight: bold;
+    margin-bottom: 80px;
 }
 
 /* QUESTIONÁRIO */
@@ -39,10 +48,16 @@ fieldset {
 
 .primeiras-respostas, .segundas-respostas, .terceiras-respostas, .quartas-respostas, .quintas-respostas, .sextas-respostas, .setimas-respostas{
     text-align: center;
+    margin: 30px 0;
+    
 }
 
-.texto-pergunta{
-    font-weight: bold;
+.primeiras-respostas label, .segundas-respostas label, .terceiras-respostas label, .quartas-respostas label, .quintas-respostas label, .sextas-respostas label, .setimas-respostas label{
+    font-size: 18px;
+}
+
+.primeira-pergunta, .segunda-pergunta, .terceira-pergunta, .quarta-pergunta, .quinta-pergunta, .sexta-pergunta, .setima-pergunta {
+    margin: 30px 0;
 }
 
 img {
@@ -62,7 +77,7 @@ img {
 
 .btn, .btn-reiniciar {
     border-radius: 5%;
-    padding: 8px 8px;
+    padding: 8px 12px;
     border: none;
     text-transform: uppercase;
     color: #ffffff;
@@ -81,14 +96,14 @@ img {
     display: none;
 }
 
-@media (max-width: 570px){
+@media (max-width: 740px){
     .chamada__foto{
         width: 100%;
     }
 
     .chamada__titulo{
-        font-size: 29px;
-        margin-bottom: 30px;
+        font-size: 40px;
+        margin-bottom: 40px
     }
 
     label{
@@ -97,5 +112,19 @@ img {
 
     img{
         width: 100%;
+    }
+
+    .container{
+        width: 80%;
+    }
+}
+
+@media (max-width: 640px){
+    .chamada__foto{
+        margin: 0;
+    }
+
+    .chamada__div{
+        width: 90%;
     }
 }
