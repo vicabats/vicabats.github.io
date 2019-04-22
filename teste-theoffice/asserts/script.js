@@ -172,7 +172,7 @@ console.log(contadorAcertos)
     resultadoUsuario.innerHTML = "Você precisa assistir mais The Office. Enquanto isso, receba seus " + contadorAcertos + " pontos."
     }
 
-  else if (contadorAcertos > 3 && contadorAcertos <=7) {
+  else if (contadorAcertos > 3 && contadorAcertos <7) {
     resultadoUsuario.innerHTML = "Você até que é um fã razoável. Parabéns pelos seus " + contadorAcertos + " pontos."
     }
 

@@ -41,6 +41,10 @@ fieldset {
     text-align: center;
 }
 
+.texto-pergunta{
+    font-weight: bold;
+}
+
 img {
     margin: 50px auto;
     display: block;
@@ -75,4 +79,23 @@ img {
 
 .btn-reiniciar{
     display: none;
+}
+
+@media (max-width: 570px){
+    .chamada__foto{
+        width: 100%;
+    }
+
+    .chamada__titulo{
+        font-size: 29px;
+        margin-bottom: 30px;
+    }
+
+    label{
+        font-size: 17px;
+    }
+
+    img{
+        width: 100%;
+    }
 }
