@@ -1,0 +1,77 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    height: 100%;
+}
+fieldset {
+    border:none;
+}
+
+.container{
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* CHAMADA */
+
+.chamada__div{
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.chamada__foto{
+    width: 80%;
+}
+
+.chamada__titulo{
+    font-size: 40px;
+    text-align: center;
+}
+
+/* QUESTIONÁRIO */
+
+.formulario div{
+    margin: 30px 0;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+
+.primeiras-respostas, .segundas-respostas, .terceiras-respostas, .quartas-respostas, .quintas-respostas, .sextas-respostas, .setimas-respostas{
+    text-align: center;
+}
+
+img {
+    margin: 50px auto;
+    display: block;
+    width: 50%;
+}
+
+/* ÁREA DO RESULTADO */
+.resposta{
+    text-align: center;
+    margin: 50px auto;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(119, 106, 90);
+}
+
+.btn, .btn-reiniciar {
+    border-radius: 5%;
+    padding: 8px 8px;
+    border: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #7F7B6E;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+}
+
+.btn:hover, .btn-reiniciar:hover{
+    background-color: blanchedalmond
+}
+
+.btn-reiniciar{
+    display: none;
+}
