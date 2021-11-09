@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: grid;
+}
+
+code {
+  font-family: "Montserrat", sans-serif;
+}
